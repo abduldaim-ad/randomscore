@@ -1,0 +1,65 @@
+.modal-style{
+    margin: 2%;
+    padding: 2%;
+    width: 90%;
+    height: 80vh;
+    background-color: rgb(168, 22, 22);
+    position: fixed;
+    top:0;
+    z-index: 1;
+    box-shadow: 3px 3px 1px 1px grey;
+    border-radius: 2px;
+}
+
+.table-style{
+    background-color: white !important;
+}
+
+.inner-table{
+    /* background-color: grey; */
+}
+
+.table-data:hover{
+    /* background-color: white; */
+}
+
+.table-values{
+    margin: 2% 30%;
+}
+
+.table-values:hover{
+    background-color: grey;
+}
+
+.close-btn{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 3% 5%;
+    text-align: right;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.inner-div{
+    width: 90%;
+}
+
+@media screen and (max-width:600px) {
+    .main-div{
+        flex-direction: column;
+    }
+    .inner-div{
+        width: 100%;
+    }
+    .modal-image{
+        width: 80%;
+        margin: 1% 10%;
+    }
+    .modal-style{
+        margin-left: -2rem;
+    }
+    .caption-style{
+        font-size: 0.5rem;
+    }
+}
