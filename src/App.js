@@ -37,7 +37,7 @@ const App = () => {
       <User userName={userName} setUserName={setUserName} setDisableBtn={setDisableBtn} setDisableClick={setDisableClick} />
       <CurrentStatus count={count} score={score} random={random} setCount={setCount} setScore={setScore} setRandom={setRandom} setStatus={setStatus} userData={userData} powerCount={powerCount} disableBtn={disableBtn} setDisableBtn={setDisableBtn} lastClick={lastClick} setLastClick={setLastClick} disableClick={disableClick} setDisableClick={setDisableClick} />
       <Power disableBtn={disableBtn} setDisableBtn={setDisableBtn} powerCount={powerCount} setPowerCount={setPowerCount} random={random} lastClick={lastClick} setLastClick={setLastClick} />
-      <GameResult status={status} setStatus={setStatus} count={count} score={score} setCount={setCount} setScore={setScore} setRandom={setRandom} setDisableBtn={setDisableBtn} setDisableClick={setDisableClick} showModal={showModal} setShowModal={setShowModal} />
+      <GameResult status={status} setStatus={setStatus} count={count} score={score} setCount={setCount} setScore={setScore} setRandom={setRandom} setDisableBtn={setDisableBtn} setDisableClick={setDisableClick} showModal={showModal} setShowModal={setShowModal} setLastClick={setLastClick} setPowerCount={setPowerCount} />
       {/* </Wrapper> */}
     </>
   )

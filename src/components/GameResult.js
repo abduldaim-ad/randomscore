@@ -2,7 +2,7 @@ import React from 'react'
 import { styled } from 'styled-components'
 import Modal from './Modal';
 
-const GameResult = ({ status, setStatus, count, score, setCount, setScore, setRandom, setDisableClick, setDisableBtn, showModal, setShowModal }) => {
+const GameResult = ({ status, setStatus, count, score, setCount, setScore, setRandom, setDisableClick, setDisableBtn, showModal, setShowModal, setLastClick, setPowerCount }) => {
 
     const Wrapper = styled.section`
         h3{
@@ -33,6 +33,8 @@ const GameResult = ({ status, setStatus, count, score, setCount, setScore, setRa
         setDisableClick(false)
         setDisableBtn(false)
         setStatus("Game Results Here!")
+        setLastClick("")
+        setPowerCount(0);
     }
 
     return (
