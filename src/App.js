@@ -3,7 +3,7 @@ import Power from './components/Power';
 import GameResult from './components/GameResult';
 import CurrentStatus from './components/CurrentStatus';
 import {
-  createBrowserRouter,
+  createHashRouter,
   Link,
 } from "react-router-dom";
 import User from './components/User';
@@ -43,7 +43,7 @@ const App = () => {
   )
 }
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: (
