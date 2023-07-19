@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { styled } from 'styled-components';
 
 const Power = ({ disableBtn, setDisableBtn, powerCount, setPowerCount, random, lastClick, setLastClick }) => {

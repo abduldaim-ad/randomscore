@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { styled } from 'styled-components';
 
 const CurrentStatus = ({ count, score, random, setCount, setScore, setRandom, setStatus, userData, powerCount, disableBtn, setDisableBtn, lastClick, setLastClick, disableClick, setDisableClick }) => {

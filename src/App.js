@@ -2,11 +2,8 @@ import React, { useState } from 'react'
 import Power from './components/Power';
 import GameResult from './components/GameResult';
 import CurrentStatus from './components/CurrentStatus';
-import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
-  RouterProvider,
-  Route,
   Link,
 } from "react-router-dom";
 import User from './components/User';
@@ -20,7 +17,6 @@ const App = () => {
   const [powerCount, setPowerCount] = useState(0);
   const [status, setStatus] = useState("Game Results Here!");
   const [disableBtn, setDisableBtn] = useState(true);
-  const [isHighest, setIsHighest] = useState(false);
   const [lastClick, setLastClick] = useState("")
   const [disableClick, setDisableClick] = useState(true)
   const [userName, setUserName] = useState("");
