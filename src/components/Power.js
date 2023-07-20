@@ -17,19 +17,24 @@ const Power = ({ disableBtn, setDisableBtn, powerCount, setPowerCount, random, l
             border-radius:20%;
         }
         button{
-            background-color:red;
+            background-color:${disableBtn ? "grey" : "red"};
             padding:2rem;
             box-shadow: 5px 5px 10px 10px grey;
             cursor:pointer;
             border-radius:20%;
             &:hover{
-                background-color:green;
+                background-color:${disableBtn ? "grey" : "green"};
             }
         }
 
         h4{
             padding:1%;
             border-radius:10%;
+        }
+        @media screen and (max-width:700px){
+            section{
+                flex-direction:column;
+            }
         }
     `
 

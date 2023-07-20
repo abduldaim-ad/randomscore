@@ -15,9 +15,17 @@ const GameResult = ({ status, setStatus, count, score, setCount, setScore, setRa
             flex-wrap:wrap;
             justify-content:center;
             button{
-            padding:1rem;
-            cursor:pointer;
-            margin: 5px;
+                padding:1rem;
+                margin: 5px;
+                cursor:pointer;
+                border:2px solid black;
+                box-shadow: 2px 2px 5px 5px grey;
+                background-color: green;
+                border-radius:10%;
+                font-weight:bold;
+                &:hover{
+                    background-color: grey;
+                }
             }
         }
     `;
@@ -43,7 +51,7 @@ const GameResult = ({ status, setStatus, count, score, setCount, setScore, setRa
                 <h3>{status}</h3>
                 <div>
                     <button onClick={() => handleShowModal()}>Show Game Stats</button>
-                    <button onClick={() => restartGame()}><strong>Restart Game</strong></button>
+                    <button onClick={() => restartGame()}>Restart Game</button>
                 </div>
                 <Modal showModal={showModal} setShowModal={setShowModal} />
             </Wrapper>

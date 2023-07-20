@@ -5,7 +5,7 @@ const CurrentStatus = ({ count, score, random, setCount, setScore, setRandom, se
 
     const Wrapper = styled.section`
 
-        h1{
+        h1, h3{
             display:grid;
             place-items:center;
         }
@@ -19,14 +19,14 @@ const CurrentStatus = ({ count, score, random, setCount, setScore, setRandom, se
         }
 
         button{
-            background-color:red;
+            background-color:${disableClick ? "grey" : "red"};
             padding:2rem;
             box-shadow: 5px 5px 10px 10px grey;
             cursor:pointer;
             border-radius:20%;
             margin:auto;
             &:hover{
-                background-color:green;
+                background-color:${disableClick ? "grey" : "green"};
             }
         }
     `;
@@ -66,7 +66,6 @@ const CurrentStatus = ({ count, score, random, setCount, setScore, setRandom, se
             setDisableBtn(true)
         }
         if (powerCount < 2 && disableBtn) {
-            // setDisableBtn(true);
             setDisableBtn(!disableBtn)
         }
     }
@@ -76,6 +75,7 @@ const CurrentStatus = ({ count, score, random, setCount, setScore, setRandom, se
             <Wrapper>
 
                 <h1>Random Score Game</h1>
+                <h3>Welcome {userData.userName}</h3>
 
                 <div>
                     <h2>Count: {count}</h2>
