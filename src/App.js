@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import {
   createHashRouter,
-  Link,
 } from "react-router-dom";
 import User from './components/User';
 import Game from './components/Game';
